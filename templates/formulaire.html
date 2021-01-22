@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="formatimage">
+  <div class="formatimage-panneau">
+    <img id="utd" src="{{url_for('static', filename='196.png')}}" class="card-img-top"/>
+  </div>
+
+  <div class="formatimage-panneau formulaire-format">
+    <form action = "http://127.0.0.1:5000/resultatduformulaire" method ="post"><h1>Formulaire de paiement</h1>
+        <p>Les champs obligatoires sont suivis par un <strong><abbr title="required">*</abbr></strong>.</p>
+        <section>
+            <h2>Informations de contact</h2>
+            <!-- <fieldset>
+              <legend>Faites un don </legend>
+              <ul>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value=50 >
+                      50 €
+                    </label>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value=80>
+                      80 €
+                    </label>
+                    <label for="title_2">
+                        <input type="radio" id="title_2" name="title" value=100>
+                        100 €
+                    </label>
+                    <label for="title_2">
+                        <input type="radio" id="title_2" name="title" value=200>
+                        200 €
+                    </label>
+                
+              </ul>
+            </fieldset> -->
+            <p>
+              <label for="name">
+                <span>Nom : </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="username" required>
+            </p>
+            <p>
+              <label for="surname">
+                <span>Prénom :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="surname" name="usersurname" required>
+            </p>
+            <p>
+                <label for="mail">
+                  <span>E-mail :</span>
+                  <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p>
+                <label for="don">
+                  <span>Don en € :</span>
+                  <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="number" id="don" name="don" required>
+            </p>
+            <p>
+
+                <input type="radio" required>
+                <label for="'vous avez pris connaissance..">
+                <span> 'vous avez pris connaissance.. </span>
+            </p>
+        </section>
+                
+        <section>
+            <h2>Informations de paiement</h2>
+            <p>
+            <label for="card">
+                <span>Type de carte :</span>
+            </label>
+            <select id="card" name="usercard" required>
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+            </select>
+            </p>
+            <p>
+            <label for="number">
+                <span>Numéro de carte :</span>
+                <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="number" name="cardnumber" required>
+            </p>
+            <p>
+            <label for="date">
+                <span>Validité :</span>
+                <strong><abbr title="required">*</abbr></strong>
+                <em>format mm/aa</em>
+            </label>
+            <input type="text" id="date" name="expiration" required>
+            </p>
+        </section>
+        <p> <button type="submit">Valider le paiement</button> </p>
+    </form>
+  </div>
+  <div class="formatimage-panneau">
+    <img id="utd" src="{{url_for('static', filename='utilisation des dons.png')}}" class="card-img-top"/>
+  </div>
+</div>
+
+{% endblock %}   
+</html>

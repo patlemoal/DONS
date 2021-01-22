@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      #logo{
+        height: 100px;
+        width: 100px;
+        margin-left: 100px;
+        margin-right: 50px;
+      }
+
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <nav class="nav manavbar">
+      <img id="logo" src="{{url_for('static', filename='logo.png')}}" />
+      <ul>
+        <a class="manavbar-menu0"></i>Tel :+33 2 98 48 69 17</a></li>
+        <a class="manavbar-menu0"></i>Mail : SNSM@gmail.com</a></li>
+    </ul>
+      <div id="menu">  
+      <a class="manavbar-menu" aria-current="page" href="{{url_for('page')}}">Acceuil</a>
+      <a class="manavbar-menu" aria-current="page" href="{{url_for('formulaire')}}">Nous soutenir</a>
+      <a class="manavbar-menu" aria-current="page" href="{{url_for('afficherlesdons')}}">Administrateur</a>
+    </div>
+
+    </nav>
+      {% block content %} {% endblock %}
+</body>
+</html>

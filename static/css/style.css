@@ -1,0 +1,163 @@
+.titre {
+    margin-top: 0;
+    background-color: rgb(161, 151, 245);
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0.2em;
+    width:80%;
+    margin: 25px auto;
+}
+
+
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto;
+    border: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+fieldset {
+    width: 250px;
+    box-sizing: border-box;
+    margin-left: 136px;
+    border: 1px solid #999;
+}
+
+button {
+    margin: 20px 0 0 124px;
+}
+
+label {
+  position: relative;
+}
+
+label em {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+
+
+body{
+    color:#000;
+}
+
+table{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+/*  on met un point quand c'est une classe */
+.manavbar {
+background-color : #3cc78f;
+width: 80%;
+/* 0 haut en bas, auto gauche droite*/
+margin: 25px auto;
+/* pour l'arrondi de la bordure*/
+border-radius: 15px ;
+/*marge interieur de la bordure*/
+padding: 30px;
+display : flex;
+justify-content: space-between;
+}
+
+#logo {
+width: 200px;
+height: 200px;
+}
+
+.manavbar-menu{
+/*effacer les décorations de texte attribué automatiquement à "a"*/
+text-decoration: none;
+color: white;
+font-size: 24px;
+font-weight: 600;/*gras à la police*/
+padding: 0 25px;
+}
+
+/* on crée un id menu pour "isoler les éléments dans lanav, on commence par renommer background-color en red pour visualiser nos éléménts"*/
+#menu{
+vertical-align: middle;
+
+display: flex;
+align-items: center;
+}
+
+#contenu{
+    margin: 25px auto; 
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.photo{
+    margin: 0 auto;
+    display: block
+}
+
+.formulaire-format{
+    width: 20%;
+}
+
+
+.formatimage{
+    display:flex;
+    justify-content: space-around;
+}
+
+.titre2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0.2em;
+    width:80%;
+    margin: 25px auto;
+}
+
+#tata {
+    margin: 125px auto;
+    display: block;
+}
+
+.manavbar-menu2{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;/*gras à la police*/
+    padding: 0 0;
+    text-align: right;
+    }

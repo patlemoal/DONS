@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    
+
+
+    <div>
+        <img id="tata" src="{{url_for('static', filename='photo.jpeg')}}" />
+    </div>
+
+    <h1 class='titre' >Bilan des dons 2021 en faveur de la SNSM</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Donateur    </th>
+                <th>Don     </th>
+                <th>Adresse Mail    </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for don in resultat %}
+                <tr>
+                    <td>{{ don.username }}</td>
+                    <td>{{ don.don }}</td>
+                    <td>{{ don.usermail}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2 class='titre2'> Total des dons: {{ don_count }} € </h2>
+
+
+   
+{% endblock %}   
+
+</html>
